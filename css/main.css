@@ -1,0 +1,366 @@
+/*Eliminando margenes que vienen por defecto*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Se ponen caraccteristicas de color y tipografia en la barra de menu*/
+nav.mainMenu {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #2C3E50;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; /*Para que al hacer scroll la barra se posicione perfectamente sobre todos los elementos de la pagina*/
+}
+
+/*Contenedor de los elementos del menu, facilita el manejo y posicionamiento*/
+.container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+/*Caracteristicas de la primera pestaña del menu*/
+.brandName {
+  font-size: 32px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*contenerdor de los 3 botones a la izquierda del menu*/
+div.subContainer {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-left: 500px
+}
+
+/*permite posicionar los tres ultimos elementos del menu en posicion horizontal*/
+li.menuItem {
+  display: inline-block;
+  list-style: none;
+}
+
+/*Color de letra*/
+a.linkItem {
+  color: #fff;
+  padding: 8px;
+}
+
+/*Efecto letras de los 3 elementos a la izquierda del menu al posicionarse sobre ellas con el cursor*/
+a.linkItem:hover {
+  color: #18bc9c;
+  cursor: pointer;
+}
+
+
+/*Caracteristicas de la section home*/
+section.home {
+  padding-top: 200px; /*Permite que el contenido de la seccion se ubuque justo debajo del menu*/
+  padding-bottom: 100px;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+/*Contenedor de las secciones, para facilitar distribucion de los elementos*/
+div.containerSection {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Caracteristicas del titulo de la primera seccion*/
+h1.titleHome {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*caracteristicas del adorno de estrella mas lineas laterales*/
+div.starLine1 {
+  border-top: 5px solid #FFF;
+  width: 10%;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+
+span.skillsHome {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/*Caracteristicas seccion portfolio*/
+section.portfolio {
+  padding: 100px 0;
+  text-align: center;
+  line-height: 1.5;
+  color: #2C3E50;
+}
+
+/*Caracteristicas de los titulos seccion portfolio y contact*/
+h2.titlePortfolio, h2.titleContact {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: #212529;
+}
+
+/*Caracteristicas del adorno de estrellas y lineas laterales de la seccion portfolio y contact*/
+div.starLine2 {
+  border-top: 5px solid #2C3E50;
+  width: 10%;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+
+/*contenedor para las imagenes, distribuidos en 3 columnas*/
+div.picturesRow {
+  column-count: 3;
+  column-gap: 5px;
+  margin-top: 15px;
+}
+
+img.picture {
+  width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/*caracteristicas seccion about*/
+section.about {
+  padding: 100px 0;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+/*caracteristicas titulo seccion about*/
+h2.titleAbout {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*caracteristicas de los parrafos*/
+p.text {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/*contenedor parrafos con dos columnas*/
+div.aboutRow {
+  column-count: 2;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+div.column1 {
+  width: 350px;
+  height: auto;
+  text-align: left;
+}
+
+div.column2 {
+  width: 350px;
+  height: auto;
+  text-align: left;
+}
+
+/*boton download*/
+a.textDownload {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #18bc9c;
+  border-radius: 5px;
+  width: 220px;
+  height: auto;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.textDownload:hover {
+  color: #18bc9c;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*caracteristicas seccion contact me*/
+section.contact {
+  padding: 100px 0;
+  text-align: center;
+  line-height: 1.5;
+  color: #2C3E50;
+}
+
+.formBox {
+  margin-top: 20px;
+}
+
+/*cacracteristicas del formulario*/
+div.textContact {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: justify;
+  width: 700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+}
+
+/*etiquetas del formulario*/
+label.inputName {
+  color: #495057;
+  opacity: 0.5;
+}
+
+/*caracteristicas del input box*/
+input {
+  width: 700px;
+  height: auto;
+  font-size: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+#message {
+  height: 150px;
+}
+
+/*boton send*/
+div.send {
+  width: 100px;
+  height: auto;
+  background-color: #18bc9c;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-left: 220px;
+}
+
+#textSend {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*efecto boton send*/
+div.send:hover {
+  background-color: #3c9181;
+  cursor: pointer;
+}
+
+/*caracteristicas del footer*/
+footer.information{
+  padding: 50px 0 30px 0;
+  text-align: center;
+  line-height: 1.5;
+  background: #2C3E50;
+  color: #fff;
+}
+
+/*contenedor con tres columnas para distribuir la informacion*/
+div.informationRow{
+  column-count: 3;
+  display: inline-block;
+}
+
+/*Caracteristicas de titulos*/
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+p.textFooter{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+/*caracteristicas de los iconos*/
+li a.icono i{
+  color: #fff;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+/*contenedor circular de los iconos*/
+a.icono{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+
+/*efecto de los iconos*/
+a.icono i:hover{
+  background-color: #fff;
+  color:#18bc9c;
+  cursor: pointer;
+}
+
+a.icono:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*enlace en el footer*/
+a.enlaceFooter{
+  color: #18bc9c;
+}
+
+/*informacion de copyright*/
+p.lastFooter{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 80px
+}
